@@ -64,12 +64,12 @@
         const results = document.getElementById('results');
 
         yesBtn.addEventListener('click', () => {
-            emoji.textContent = '🎉🥳🤗';
+            emoji.textContent = '🎉';
             results.textContent = 'Yay! You said Yes!';
         });
 
         noBtn.addEventListener('click', () => {
-            emoji.textContent = '😢😭☹';
+            emoji.textContent = '😢';
             results.textContent = 'Aww, you said No...';
         });
     </script>
