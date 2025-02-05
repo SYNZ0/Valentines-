@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+OCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
 </head>
 <body>
 
-    <h1>mabyy malapit na po yung valentines day,Can you be my valentine?</h1>
+    <h1>wifeyy malapit na po ang Valentines day, Can you be my valentine?</h1>
     
     <div class="buttons">
         <button id="yesBtn">Yes</button>
@@ -64,13 +64,13 @@
         const results = document.getElementById('results');
 
         yesBtn.addEventListener('click', () => {
-            emoji.textContent = '🎉';
-            results.textContent = 'Yay! You said Yes!';
+            emoji.textContent = '🎉🥳🎊🎉';
+            results.textContent = 'Yeyyyy! ILOVEYOUSOMUCHH WIFEY';
         });
 
         noBtn.addEventListener('click', () => {
-            emoji.textContent = '😢';
-            results.textContent = 'Aww, you said No...';
+            emoji.textContent = '😢😭😞';
+            results.textContent = 'Aww, D WAW...';
         });
     </script>
 
