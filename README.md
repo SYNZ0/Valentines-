@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Will You Be My Valentine?</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffebee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      text-align: center;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    h1 {
-      color: #d32f2f;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 0 10px;
-    }
-    #yes-btn {
-      background-color: #4caf50;
-      color: white;
-    }
-    #no-btn {
-      background-color: #f44336;
-      color: white;
-    }
-    .emoji {
-      font-size: 48px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yesBtn {
+            background-color: #4caf50;
+            color: white;
+        }
+        #noBtn {
+            background-color: #f44336;
+            color: white;
+        }
+        .emoji {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .results {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Can you be my Valentine?</h1>
+
+    <h1>mabyy malapit na po yung valentines day,Can you be my valentine?</h1>
+    
     <div class="buttons">
-      <button id="yes-btn">Yes</button>
-      <button id="no-btn">No</button>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
     </div>
-    <div id="emoji" class="emoji"></div>
-  </div>
 
-  <script>
-    const yesBtn = document.getElementById('yes-btn');
-    const noBtn = document.getElementById('no-btn');
-    const emoji = document.getElementById('emoji');
+    <div class="emoji" id="emoji"></div>
 
-    yesBtn.addEventListener('click', () => {
-      emoji.textContent = '🎉🥳🎊';
-    });
+    <div class="results" id="results"></div>
 
-    noBtn.addEventListener('click', () => {
-      emoji.textContent = '😢😭😞';
-    });
-  </script>
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const emoji = document.getElementById('emoji');
+        const results = document.getElementById('results');
+
+        yesBtn.addEventListener('click', () => {
+            emoji.textContent = '🎉';
+            results.textContent = 'Yay! You said Yes!';
+        });
+
+        noBtn.addEventListener('click', () => {
+            emoji.textContent = '😢';
+            results.textContent = 'Aww, you said No...';
+        });
+    </script>
+
 </body>
 </html>
